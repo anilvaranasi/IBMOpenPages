@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="entity" label="Entity" language="en" table="x_146833_ibm_ope_0_integration_queue">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>entity</element>
+            <help/>
+            <hint/>
+            <label>Entity</label>
+            <language>en</language>
+            <name>x_146833_ibm_ope_0_integration_queue</name>
+            <plural>Entities</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>adminanil</sys_created_by>
+            <sys_created_on>2023-05-09 06:28:09</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Entity</sys_name>
+            <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+            <sys_update_name>sys_documentation_x_146833_ibm_ope_0_integration_queue_entity_en</sys_update_name>
+            <sys_updated_by>adminanil</sys_updated_by>
+            <sys_updated_on>2023-05-09 06:28:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
