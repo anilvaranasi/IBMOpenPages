@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_146833_ibm_ope_0_integration_queue</description>
+        <name>x_146833_ibm_ope_0_integration_queue</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 05:51:23</sys_created_on>
+        <sys_id>953c8c80073aed50b965f7208c1ed04a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_146833_ibm_ope_0_integration_queue</sys_name>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name>sys_security_acl_953c8c80073aed50b965f7208c1ed04a</sys_update_name>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 05:51:23</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

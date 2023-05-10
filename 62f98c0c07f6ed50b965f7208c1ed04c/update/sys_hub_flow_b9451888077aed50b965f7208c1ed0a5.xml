@@ -1,0 +1,1983 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>trigger_integration</internal_name>
+        <label_cache>[{"name":"78144c39-42ca-4793-ad30-8fd4eed655bb.__action_status__","label":"3 - UpdateIncidentData➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"62cb86b0-eaeb-472b-bb06-9f1cdbf5f90a"}}]</label_cache>
+        <master_snapshot>7496d4cc077aed50b965f7208c1ed0d4</master_snapshot>
+        <name>Trigger Integration</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b19658cc077aed50b965f7208c1ed0b1</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:31:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b9451888077aed50b965f7208c1ed0a5</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Trigger Integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name>sys_hub_flow_b9451888077aed50b965f7208c1ed0a5</sys_update_name>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_146833_ibm_ope_0_integration_queue">state=processing<item display_value="processing" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="processing"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b19658cc077aed50b965f7208c1ed0b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:45</sys_updated_on>
+        <table>x_146833_ibm_ope_0_integration_queue</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>b9451888077aed50b965f7208c1ed0a5</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:45</sys_created_on>
+        <sys_id>7d9658cc077aed50b965f7208c1ed0b1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:45</sys_updated_on>
+        <trigger display_value="">b19658cc077aed50b965f7208c1ed0b1</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=b9451888077aed50b965f7208c1ed0a5^sys_idNOT IN7d9658cc077aed50b965f7208c1ed0b1"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b9451888077aed50b965f7208c1ed0a5^sys_idNOT INb7c5504c077aed50b965f7208c1ed034"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>b7c5504c077aed50b965f7208c1ed034</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:25</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b7c5504c077aed50b965f7208c1ed034"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b7c5504c077aed50b965f7208c1ed034</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>3fc5504c077aed50b965f7208c1ed035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <value>x_146833_ibm_ope_0_integration_queue</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b7c5504c077aed50b965f7208c1ed034</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>7bc5504c077aed50b965f7208c1ed035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <value>state=processing</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b7c5504c077aed50b965f7208c1ed034</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>b7c5504c077aed50b965f7208c1ed035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=b7c5504c077aed50b965f7208c1ed034"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b9451888077aed50b965f7208c1ed0a5^sys_idNOT IN39451888077aed50b965f7208c1ed0a6"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b9451888077aed50b965f7208c1ed0a5</id>
+        <name>Trigger Integration</name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:31:01</sys_created_on>
+        <sys_id>39451888077aed50b965f7208c1ed0a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:31:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=39451888077aed50b965f7208c1ed0a6"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b9451888077aed50b965f7208c1ed0a5^sys_idNOT IN73c5104c077aed50b965f7208c1ed0f5,73c5104c077aed50b965f7208c1ed0fd,f7c5104c077aed50b965f7208c1ed0f9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</model>
+        <model_id>b9451888077aed50b965f7208c1ed0a5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>73c5104c077aed50b965f7208c1ed0f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</model>
+        <model_id>b9451888077aed50b965f7208c1ed0a5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>73c5104c077aed50b965f7208c1ed0fd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</model>
+        <model_id>b9451888077aed50b965f7208c1ed0a5</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>f7c5104c077aed50b965f7208c1ed0f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b9451888077aed50b965f7208c1ed0a5^sys_idNOT INccd5504c077aed50b965f7208c1ed080"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="UpdateIncidentData">fcb5980c077aed50b965f7208c1ed084</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:21</sys_created_on>
+        <sys_id>ccd5504c077aed50b965f7208c1ed080</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <ui_id>78144c39-42ca-4793-ad30-8fd4eed655bb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ccd5504c077aed50b965f7208c1ed080"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ccd5504c077aed50b965f7208c1ed080"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ccd5504c077aed50b965f7208c1ed080"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b9451888077aed50b965f7208c1ed0a5^sys_idNOT IN33c5504c077aed50b965f7208c1ed037,5c96d4cc077aed50b965f7208c1ed014,849694cc077aed50b965f7208c1ed0f6"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <inputs/>
+        <order>1</order>
+        <parent_ui_id/>
+        <subflow display_value="AWS Credential parser 3.0">1029b1a907a6a510b965f7208c1ed0cc</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>33c5504c077aed50b965f7208c1ed037</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <ui_id>c8e666fc-73b1-47e0-a94c-4d9cd78a0a5d</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=33c5504c077aed50b965f7208c1ed037"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>33c5504c077aed50b965f7208c1ed037</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:21</sys_created_on>
+        <sys_id>44d5504c077aed50b965f7208c1ed071</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:21</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">7bc5504c077aed50b965f7208c1ed038</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_33c5504c077aed50b965f7208c1ed037^id=33c5504c077aed50b965f7208c1ed037"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=33c5504c077aed50b965f7208c1ed037^sys_idNOT IN7bc5504c077aed50b965f7208c1ed038"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">33c5504c077aed50b965f7208c1ed037</model>
+        <model_id>33c5504c077aed50b965f7208c1ed037</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_33c5504c077aed50b965f7208c1ed037</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>7bc5504c077aed50b965f7208c1ed038</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=33c5504c077aed50b965f7208c1ed037"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <inputs/>
+        <order>7</order>
+        <parent_ui_id>9088f7af-6050-4290-a72d-1babf2dbca2b</parent_ui_id>
+        <subflow display_value="process reponse failure">6426d08c077aed50b965f7208c1ed079</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>5c96d4cc077aed50b965f7208c1ed014</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <ui_id>e78ea8bc-f13b-4821-a68e-3c3d8e813feb</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5c96d4cc077aed50b965f7208c1ed014"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>5c96d4cc077aed50b965f7208c1ed014</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>9c96d4cc077aed50b965f7208c1ed021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">1896d4cc077aed50b965f7208c1ed015</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_5c96d4cc077aed50b965f7208c1ed014^id=5c96d4cc077aed50b965f7208c1ed014"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=5c96d4cc077aed50b965f7208c1ed014^sys_idNOT IN1896d4cc077aed50b965f7208c1ed015"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">5c96d4cc077aed50b965f7208c1ed014</model>
+        <model_id>5c96d4cc077aed50b965f7208c1ed014</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_5c96d4cc077aed50b965f7208c1ed014</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>1896d4cc077aed50b965f7208c1ed015</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5c96d4cc077aed50b965f7208c1ed014"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <inputs/>
+        <order>5</order>
+        <parent_ui_id>bda3fecc-5089-467d-b063-c7ef029bc47e</parent_ui_id>
+        <subflow display_value="Process response success">63f5d84c077aed50b965f7208c1ed0c5</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>849694cc077aed50b965f7208c1ed0f6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <ui_id>9bd3f992-48b5-4ac9-b9ad-212f1215c93d</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=849694cc077aed50b965f7208c1ed0f6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>849694cc077aed50b965f7208c1ed0f6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>0096d4cc077aed50b965f7208c1ed011</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:38</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">849694cc077aed50b965f7208c1ed0f7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_849694cc077aed50b965f7208c1ed0f6^id=849694cc077aed50b965f7208c1ed0f6"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=849694cc077aed50b965f7208c1ed0f6^sys_idNOT IN849694cc077aed50b965f7208c1ed0f7"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">849694cc077aed50b965f7208c1ed0f6</model>
+        <model_id>849694cc077aed50b965f7208c1ed0f6</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_849694cc077aed50b965f7208c1ed0f6</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>849694cc077aed50b965f7208c1ed0f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=849694cc077aed50b965f7208c1ed0f6"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b9451888077aed50b965f7208c1ed0a5^sys_idNOT IN009694cc077aed50b965f7208c1ed0e4,4c96d4cc077aed50b965f7208c1ed011,7fb6500007baed50b965f7208c1ed0b0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">809694cc077aed50b965f7208c1ed0e3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>009694cc077aed50b965f7208c1ed0e4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <ui_id>bda3fecc-5089-467d-b063-c7ef029bc47e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=009694cc077aed50b965f7208c1ed0e4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>009694cc077aed50b965f7208c1ed0e4</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>889694cc077aed50b965f7208c1ed0f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:38</sys_updated_on>
+        <value>IF response is success</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=009694cc077aed50b965f7208c1ed0e4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>009694cc077aed50b965f7208c1ed0e4</id>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>089694cc077aed50b965f7208c1ed0f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{78144c39-42ca-4793-ad30-8fd4eed655bb.__action_status__}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>009694cc077aed50b965f7208c1ed0e4</id>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>409694cc077aed50b965f7208c1ed0f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=009694cc077aed50b965f7208c1ed0e4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=009694cc077aed50b965f7208c1ed0e4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8496d4cc077aed50b965f7208c1ed011</block>
+        <comment/>
+        <connected_to>bda3fecc-5089-467d-b063-c7ef029bc47e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:38</sys_created_on>
+        <sys_id>4c96d4cc077aed50b965f7208c1ed011</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <ui_id>9088f7af-6050-4290-a72d-1babf2dbca2b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4c96d4cc077aed50b965f7208c1ed011"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4c96d4cc077aed50b965f7208c1ed011"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4c96d4cc077aed50b965f7208c1ed011"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">73b6500007baed50b965f7208c1ed0b0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:37:26</sys_created_on>
+        <sys_id>7fb6500007baed50b965f7208c1ed0b0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <ui_id>47eeb244-90a2-42da-a291-85e62cca4117</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7fb6500007baed50b965f7208c1ed0b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>7fb6500007baed50b965f7208c1ed0b0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:37:26</sys_created_on>
+        <sys_id>77b6500007baed50b965f7208c1ed0b5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:37:26</sys_updated_on>
+        <value>Type of source record</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e^id=7fb6500007baed50b965f7208c1ed0b0"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7fb6500007baed50b965f7208c1ed0b0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7fb6500007baed50b965f7208c1ed0b0"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5^sys_idNOT IN3bc5104c077aed50b965f7208c1ed0f8,b3c5104c077aed50b965f7208c1ed0fc,f7c5104c077aed50b965f7208c1ed0ff"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>3bc5104c077aed50b965f7208c1ed0f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>b3c5104c077aed50b965f7208c1ed0fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:33:20</sys_created_on>
+        <sys_id>f7c5104c077aed50b965f7208c1ed0ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:33:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b9451888077aed50b965f7208c1ed0a5^sys_idNOT INf19658cc077aed50b965f7208c1ed0b3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan/>
+        <plan_id>b9451888077aed50b965f7208c1ed0a5</plan_id>
+        <snapshot>7496d4cc077aed50b965f7208c1ed0d4</snapshot>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f19658cc077aed50b965f7208c1ed0b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:45</sys_updated_on>
+        <trigger display_value="">b19658cc077aed50b965f7208c1ed0b1</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=b9451888077aed50b965f7208c1ed0a5"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>trigger_integration</internal_name>
+        <label_cache>[{"name":"78144c39-42ca-4793-ad30-8fd4eed655bb.__action_status__","label":"2 - UpdateIncidentData➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"62cb86b0-eaeb-472b-bb06-9f1cdbf5f90a"}}]</label_cache>
+        <master>true</master>
+        <name>Trigger Integration</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Trigger Integration">b9451888077aed50b965f7208c1ed0a5</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7496d4cc077aed50b965f7208c1ed0d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:41</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7496d4cc077aed50b965f7208c1ed0d4^sys_idNOT INcd9618cc077aed50b965f7208c1ed05e"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>cd9618cc077aed50b965f7208c1ed05e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:45</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cd9618cc077aed50b965f7208c1ed05e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>cd9618cc077aed50b965f7208c1ed05e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>419618cc077aed50b965f7208c1ed061</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <value>x_146833_ibm_ope_0_integration_queue</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>cd9618cc077aed50b965f7208c1ed05e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>8d9618cc077aed50b965f7208c1ed060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <value>state=processing</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>cd9618cc077aed50b965f7208c1ed05e</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>c99618cc077aed50b965f7208c1ed060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">c19523d8c31932002841b63b12d3aea1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=cd9618cc077aed50b965f7208c1ed05e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7496d4cc077aed50b965f7208c1ed0d4^sys_idNOT IN7496d4cc077aed50b965f7208c1ed0d5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7496d4cc077aed50b965f7208c1ed0d4</id>
+        <name>Trigger Integration</name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:41</sys_created_on>
+        <sys_id>7496d4cc077aed50b965f7208c1ed0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7496d4cc077aed50b965f7208c1ed0d5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7496d4cc077aed50b965f7208c1ed0d4^sys_idNOT IN7496d4cc077aed50b965f7208c1ed0e7,b896d4cc077aed50b965f7208c1ed0d6,c19618cc077aed50b965f7208c1ed02e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</model>
+        <model_id>7496d4cc077aed50b965f7208c1ed0d4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:41</sys_created_on>
+        <sys_id>7496d4cc077aed50b965f7208c1ed0e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</model>
+        <model_id>7496d4cc077aed50b965f7208c1ed0d4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:41</sys_created_on>
+        <sys_id>b896d4cc077aed50b965f7208c1ed0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</model>
+        <model_id>7496d4cc077aed50b965f7208c1ed0d4</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:41</sys_created_on>
+        <sys_id>c19618cc077aed50b965f7208c1ed02e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7496d4cc077aed50b965f7208c1ed0d4^sys_idNOT IN819618cc077aed50b965f7208c1ed05e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="UpdateIncidentData">fcb5980c077aed50b965f7208c1ed084</action_type>
+        <action_type_parent display_value="UpdateIncidentData">71db3da107e6a510b965f7208c1ed067</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>819618cc077aed50b965f7208c1ed05e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <ui_id>78144c39-42ca-4793-ad30-8fd4eed655bb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=819618cc077aed50b965f7208c1ed05e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=819618cc077aed50b965f7208c1ed05e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=819618cc077aed50b965f7208c1ed05e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7496d4cc077aed50b965f7208c1ed0d4^sys_idNOT IN819618cc077aed50b965f7208c1ed0b0,859618cc077aed50b965f7208c1ed061,999618cc077aed50b965f7208c1ed0bb"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</flow>
+        <inputs/>
+        <order>4</order>
+        <parent_ui_id>bda3fecc-5089-467d-b063-c7ef029bc47e</parent_ui_id>
+        <subflow display_value="Process response success">63f5d84c077aed50b965f7208c1ed0c5</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>819618cc077aed50b965f7208c1ed0b0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <ui_id>9bd3f992-48b5-4ac9-b9ad-212f1215c93d</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=819618cc077aed50b965f7208c1ed0b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>819618cc077aed50b965f7208c1ed0b0</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>559618cc077aed50b965f7208c1ed0bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">4d9618cc077aed50b965f7208c1ed0b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_819618cc077aed50b965f7208c1ed0b0^id=819618cc077aed50b965f7208c1ed0b0"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=819618cc077aed50b965f7208c1ed0b0^sys_idNOT IN4d9618cc077aed50b965f7208c1ed0b0"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">819618cc077aed50b965f7208c1ed0b0</model>
+        <model_id>819618cc077aed50b965f7208c1ed0b0</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_819618cc077aed50b965f7208c1ed0b0</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>4d9618cc077aed50b965f7208c1ed0b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=819618cc077aed50b965f7208c1ed0b0"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</flow>
+        <inputs/>
+        <order>1</order>
+        <parent_ui_id/>
+        <subflow display_value="AWS Credential parser 3.0">1029b1a907a6a510b965f7208c1ed0cc</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>859618cc077aed50b965f7208c1ed061</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <ui_id>c8e666fc-73b1-47e0-a94c-4d9cd78a0a5d</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=859618cc077aed50b965f7208c1ed061"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>859618cc077aed50b965f7208c1ed061</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>4d9618cc077aed50b965f7208c1ed0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">419618cc077aed50b965f7208c1ed062</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_859618cc077aed50b965f7208c1ed061^id=859618cc077aed50b965f7208c1ed061"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=859618cc077aed50b965f7208c1ed061^sys_idNOT IN419618cc077aed50b965f7208c1ed062"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">859618cc077aed50b965f7208c1ed061</model>
+        <model_id>859618cc077aed50b965f7208c1ed061</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_859618cc077aed50b965f7208c1ed061</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>419618cc077aed50b965f7208c1ed062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=859618cc077aed50b965f7208c1ed061"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</flow>
+        <inputs/>
+        <order>6</order>
+        <parent_ui_id>9088f7af-6050-4290-a72d-1babf2dbca2b</parent_ui_id>
+        <subflow display_value="process reponse failure">6426d08c077aed50b965f7208c1ed079</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>999618cc077aed50b965f7208c1ed0bb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:43</sys_updated_on>
+        <ui_id>e78ea8bc-f13b-4821-a68e-3c3d8e813feb</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=999618cc077aed50b965f7208c1ed0bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>999618cc077aed50b965f7208c1ed0bb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:43</sys_created_on>
+        <sys_id>5d9618cc077aed50b965f7208c1ed0c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:43</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">559618cc077aed50b965f7208c1ed0bc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_999618cc077aed50b965f7208c1ed0bb^id=999618cc077aed50b965f7208c1ed0bb"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=999618cc077aed50b965f7208c1ed0bb^sys_idNOT IN559618cc077aed50b965f7208c1ed0bc"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">999618cc077aed50b965f7208c1ed0bb</model>
+        <model_id>999618cc077aed50b965f7208c1ed0bb</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_999618cc077aed50b965f7208c1ed0bb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>559618cc077aed50b965f7208c1ed0bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=999618cc077aed50b965f7208c1ed0bb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7496d4cc077aed50b965f7208c1ed0d4^sys_idNOT IN499618cc077aed50b965f7208c1ed03f,c19618cc077aed50b965f7208c1ed03b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8496d4cc077aed50b965f7208c1ed011</block>
+        <comment/>
+        <connected_to>bda3fecc-5089-467d-b063-c7ef029bc47e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>499618cc077aed50b965f7208c1ed03f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <ui_id>9088f7af-6050-4290-a72d-1babf2dbca2b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=499618cc077aed50b965f7208c1ed03f"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=499618cc077aed50b965f7208c1ed03f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=499618cc077aed50b965f7208c1ed03f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">809694cc077aed50b965f7208c1ed0e3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Trigger Integration">7496d4cc077aed50b965f7208c1ed0d4</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>c19618cc077aed50b965f7208c1ed03b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <ui_id>bda3fecc-5089-467d-b063-c7ef029bc47e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c19618cc077aed50b965f7208c1ed03b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c19618cc077aed50b965f7208c1ed03b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>4d9618cc077aed50b965f7208c1ed03e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <value>IF response is success</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c19618cc077aed50b965f7208c1ed03b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c19618cc077aed50b965f7208c1ed03b</id>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>c99618cc077aed50b965f7208c1ed03e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{78144c39-42ca-4793-ad30-8fd4eed655bb.__action_status__}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c19618cc077aed50b965f7208c1ed03b</id>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>099618cc077aed50b965f7208c1ed03e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c19618cc077aed50b965f7208c1ed03b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c19618cc077aed50b965f7208c1ed03b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4^sys_idNOT IN3c96d4cc077aed50b965f7208c1ed0e3,819618cc077aed50b965f7208c1ed033,899618cc077aed50b965f7208c1ed02a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:41</sys_created_on>
+        <sys_id>3c96d4cc077aed50b965f7208c1ed0e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:42</sys_created_on>
+        <sys_id>819618cc077aed50b965f7208c1ed033</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>adminanil</sys_created_by>
+        <sys_created_on>2023-05-09 06:36:41</sys_created_on>
+        <sys_id>899618cc077aed50b965f7208c1ed02a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="IBM Open pages Risk Integration" source="x_146833_ibm_ope_0">62f98c0c07f6ed50b965f7208c1ed04c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="IBM Open pages Risk Integration">62f98c0c07f6ed50b965f7208c1ed04c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>adminanil</sys_updated_by>
+        <sys_updated_on>2023-05-09 06:36:41</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7496d4cc077aed50b965f7208c1ed0d4"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>b9451888077aed50b965f7208c1ed0a5</sys_id>
+        <latest_snapshot>7496d4cc077aed50b965f7208c1ed0d4</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>

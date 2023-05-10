@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4e1c8880073aed50b965f7208c1ed049" label="integration queue" max_length="40" name="x_146833_ibm_ope_0_integration_queue" type="collection">
+        <element attributes="encode_utf8=false" label="Entity" max_length="32" name="entity" reference="sn_grc_profile" type="reference"/>
+        <element label="payload" max_length="8000" name="payload" type="string"/>
+        <element choice="1" default="new" label="State" max_length="10" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="new" sequence="100" value="new"/>
+                <element inactive_on_update="false" label="processing" sequence="200" value="processing"/>
+                <element inactive_on_update="false" label="processed-failure" sequence="300" value="processed-failure"/>
+                <element inactive_on_update="false" label="processed-success" sequence="300" value="processed-success"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="entity"/>
+        </index>
+    </element>
+</database>
